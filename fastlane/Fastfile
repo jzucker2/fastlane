@@ -43,7 +43,7 @@ lane :ci_commit do |options|
   
   test_framework(configuration: configuration)
   
-  build_example(configuration: configuration)
+  # build_example(configuration: configuration)
 
   pod_spec_lint(
     quick:true
@@ -59,7 +59,7 @@ desc " * **`configuration`**: The build configuration to use."
 desc ""
 lane :test_framework do |options|
   scan(
-    workspace: ENV['SCAN_WORKSPACE']
+    # workspace: ENV['SCAN_WORKSPACE']
     configuration: options[:configuration]
   )
   
