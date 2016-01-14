@@ -59,7 +59,6 @@ desc " * **`configuration`**: The build configuration to use."
 desc ""
 lane :test_framework do |options|
   scan(
-    workspace: ENV['SCAN_WORKSPACE']
     configuration: options[:configuration]
   )
   
